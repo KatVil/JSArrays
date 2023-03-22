@@ -1,4 +1,5 @@
-export const func = (arr, ...args) => {
+//Напишите функцию, возвращает новый массив без предоставленных значений.
+const func = (arr, ...args) => {
     let filteredArr = [...arr];
   
     for (let i = 0; i < args.length; i += 1) {
