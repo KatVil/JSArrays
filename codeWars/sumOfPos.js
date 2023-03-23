@@ -1,5 +1,5 @@
 function positiveSum(arr) {
-    return arr.filter(i => i>0).reduce((a,b)=>a+b,0); 
+    return arr.filter(i => i>0).reduce((a,b)=>a+b); //SAME return arr.filter(i => i>0).reduce((a,b)=>a+b,0);
   }
   //or
   function positiveSum(arr) {
