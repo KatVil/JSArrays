@@ -5,7 +5,19 @@
 ([1, 2], [2, 3]) => [2]
 (['a', 'b'], ['b', 'c'], ['b', 'e', 'c']) => ['b']*/
 //let arrays = ([1, 2], [2, 3]);
-const func = (...arrays) => {
+
+//
+const func = (...arrays) =>{
+  const result = arrays[0].filter((element) => {
+      let indexOfElement = arrays[1].indexOf(element);
+       if (indexOfElement >= 0) {
+   return element;}
+  });
+return result;
+};
+
+console.log(func(['a', 'b'], ['b', 'c'], ['b', 'e', 'c']));
+/*const func = (...arrays) => {
     const result = arrays[0].filter((element) => {
       let indexOfElement = arrays[1].indexOf(element);
       if (indexOfElement >= 0) {
@@ -18,4 +30,4 @@ const func = (...arrays) => {
     return Array.from(new Set(result));
   };
 
-  console.log(func(([1, 2], [2, 3])));
+  console.log(func(([1, 2], [2, 3])));*/
