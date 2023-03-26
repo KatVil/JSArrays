@@ -10,3 +10,15 @@ const func = (arr, size) => {
     return arrNew;
   };
   console.log(func([1, 2, 3, 4, 5],3));
+  //OR
+  function sliceInto(arr, size) {
+    const res = [];
+    for (let i = 0; i < arr.length; i += size) {
+        const temp = arr.slice(i, i + size);
+        res.push(temp);
+    }
+    return res;
+}
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(sliceInto(arr, 5));

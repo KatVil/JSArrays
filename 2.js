@@ -12,3 +12,4 @@ const func = (arr, num) =>{
   return arr1.length+1; 
 }
 console.log(func(arr,num));
+//or

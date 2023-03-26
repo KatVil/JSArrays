@@ -13,3 +13,23 @@ const equalArr = function (arr1, arr2) {
     return true;
 };
 console.log(equalArr(arr1,arr2));
+//or
+function getArr(arr1, arr2) {
+    if (arr1.join()==arr2.join()){
+      return true
+    } else{
+      return false
+    }
+    }
+  
+  console.log (getArr([1, 2, 33], [1, 2, 3, 3]))
+  //''???
+  const func = (arr1, arr2) => {
+    if (arr1.join() === arr2.join()){
+      return true;
+    }
+    else{
+    return false;
+    }
+  }
+  console.log(func([1,2,3], [1,2,4]));

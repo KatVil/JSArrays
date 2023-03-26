@@ -18,3 +18,10 @@ const func = array => {
     }, {});
   };
   console.log(func2([['a', 1], ['b', 2]])); 
+  //or
+let arr = [['a', 1], ['b', 2]]
+let result = arr.reduce((acc, value) => { 
+      acc[value[0]] = value[1];
+  return acc;
+}, {});
+console.log(result);
