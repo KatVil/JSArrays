@@ -21,3 +21,6 @@ const func = (arr, size) => {
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(sliceInto(arr, 5));
+
+//OR
+const t9 = (arr, n) => new Array(Math.ceil(arr.length / n)).fill(null).map((e, i) => arr.slice(i * n, i * n + n));
