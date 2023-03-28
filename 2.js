@@ -13,3 +13,5 @@ const func = (arr, num) =>{
 }
 console.log(func(arr,num));
 //or
+const sum2 = (arr, num) => arr.reduce((acc, el, i) => ({sum2: acc.sum2 + el,answer: acc.sum2 + el >10 && acc.sum <=10 ? i+1 : acc.answer,}),{sum2: 0, answer: Infinity }).answer;
+console.log(sum2([1, 2, 12, 2, 6, 8],10));

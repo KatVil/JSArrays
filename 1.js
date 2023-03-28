@@ -1,11 +1,13 @@
 //Заполните массив следующим образом: в первый элемент запишите '1', во второй '22', в третий '333' и так далее.
 let arr = []
 for (let i = 1; i < 10; i++) {
-    arr.push( `${i}`.repeat(i) ) ;
+   // arr.push( `${i}`.repeat(i) ) ;
+   arr.push(String(i).repeat(i)) ;
 }
 console.log(arr);
+
 //or
-function addArr(){
+/*function addArr(){
     let arr1 = []
     for (let i =1; i<5; i++) {
       let a = ''
@@ -29,4 +31,4 @@ function getArr(n) {
         newArr.push(arr[i].repeat(i))
     }
     return newArr
-}
+}*/

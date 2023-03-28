@@ -25,3 +25,8 @@ let result = arr.reduce((acc, value) => {
   return acc;
 }, {});
 console.log(result);
+//OR the best:
+
+const getObj = (arr) =>{
+  return Object.fromEntries(arr);
+}

@@ -23,8 +23,11 @@ function getArr(arr1, arr2) {
     }
   
   console.log (getArr([1, 2, 33], [1, 2, 3, 3]))
+//OR
+const task7 = (arr1, arr2) => arr1.length === arr2.length && arr1.every ((e,i)=> e===arr2[i]);
+
   //''???
-  const func = (arr1, arr2) => {
+  /*const func = (arr1, arr2) => {
     if (arr1.join() === arr2.join()){
       return true;
     }
@@ -32,4 +35,4 @@ function getArr(arr1, arr2) {
     return false;
     }
   }
-  console.log(func([1,2,3], [1,2,4]));
+  console.log(func([1,2,3], [1,2,4]));*/
